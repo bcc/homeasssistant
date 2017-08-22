@@ -1,0 +1,5 @@
+- name: all_phones
+  platform: group
+  services:
+    - service: ios_bcc6
+#    - service: ios_hera

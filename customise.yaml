@@ -1,0 +1,52 @@
+### Customize ###
+### For Timezones  : http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+### For Icons:     : https://materialdesignicons.com/
+
+### MultiSensor ###
+    sensor.aeotec_zw100_multisensor_6_temperature:
+        friendly_name: Temperature
+    sensor.aeotec_zw100_multisensor_6_relative_humidity:
+        friendly_name: Humidity
+        icon: mdi:water
+    sensor.aeotec_zw100_multisensor_6_luminance:
+        friendly_name: Luminance
+        icon: mdi:weather-sunny
+    sensor.aeotec_zw100_multisensor_6_ultraviolet:
+        friendly_name: Ultraviolet
+        icon: mdi:sunglasses
+    sensor.aeotec_zw100_multisensor_6_sensor:
+        friendly_name: Sensor
+    sensor.aeotec_zw100_multisensor_6_alarm_level:
+        hidden: true
+    sensor.aeotec_zw100_multisensor_6_alarm_type:
+        hidden: true
+    sensor.aeotec_zw100_multisensor_6_sourcenodeid:
+        hidden: true
+    sensor.aeotec_zw100_multisensor_6_burglar:
+        friendly_name: Motion sensor
+        icon: mdi:run
+    binary_sensor.aeotec_zw100_multisensor_6_sensor:
+        friendly_name: Motion Detected
+
+    #binary_sensor.fibaro_system_fgk10x_door_opening_sensor_sensor:
+        #friendly_name: Front Door
+    #binary_sensor.aeotec_zw112_door_window_sensor_6_sensor:
+    #    friendly_name: Back Door
+
+    sensor.hera_battery_state:
+        hidden: true
+    sensor.hera_battery_level:
+        hidden: true
+    sensor.bcc6_battery_state:
+        hidden: true
+    sensor.bcc6_battery_level:
+        hidden: true
+    sensor.athena_battery_state:
+        hidden: true
+    sensor.athena_battery_level:
+        hidden: true
+
+    device_tracker.bcc6:
+        friendly_name: Ben's Phone
+    device_tracker.hera:
+        friendly_name: Lizzie's Phone

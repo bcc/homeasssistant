@@ -1,0 +1,50 @@
+#- alias: Front Door Open
+  #trigger:
+    #platform: state
+    #entity_id: binary_sensor.fibaro_system_fgk10x_door_opening_sensor_sensor
+  #condition:
+    #- condition: state
+      #entity_id: group.presence
+      #state: 'not home'
+  #action:
+    #service: notify.all_phones
+    #data:
+      #message: "Front Door Sensor: {{ states.binary_sensor.fibaro_system_fgk10x_door_opening_sensor_sensor.state }}"
+      #data:
+        #push:
+          #badge: 5
+
+- alias: Front Door Open
+  trigger:
+    platform: state
+    entity_id: sensor.front_door
+  condition:
+    - condition: state
+      entity_id: group.presence
+      state: 'not home'
+  action:
+    service: notify.all_phones
+    data:
+      message: "Front Door: {{ states.sensor.front_door.state }}"
+      data:
+        push:
+          badge: 5
+
+
+- alias: Back Door Open
+  trigger:
+    platform: state
+    entity_id: sensor.back_door
+  condition:
+    - condition: state
+      entity_id: group.presence
+      state: 'not home'
+  action:
+    service: notify.all_phones
+    data:
+      message: "Back Door Sensor: {{ states.sensor.back_door.state }}"
+      data:
+        push:
+          badge: 5
+
+
