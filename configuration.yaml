@@ -71,7 +71,8 @@ zwave:
   network_key: !secret zwave_key
 
 camera:
-  - platform: ffmpeg
-    input: !secret hall_camera_url
+  - platform: generic
+    still_image_url: !secret hall_camera_img
+    name: Hall
 
 ios:

@@ -22,6 +22,8 @@ Presence:
   - device_tracker.bcc6
   - device_tracker.hera
 
-#Batteries:
-  #- zwave.fibaro_system_fgfs101_flood_sensor.battery_level
+Batteries:
+  - sensor.batt_frontdoor
+  - sensor.batt_flood
+  - sensor.batt_back_door
 

@@ -48,9 +48,9 @@
   sensors:
     batt_frontdoor:
       friendly_name: 'Front Door Battery'
-      value_template: '{{ states.zwave.fibaro_system_fgk10x_door_opening_sensor_sensor.attributes.battery_level }}'
+      value_template: '{{ states.zwave.fibaro_system_fgk10x_door_opening_sensor.attributes.battery_level }}'
       unit_of_measurement: '%'
-      entity_id: zwave.fibaro_system_fgk10x_door_opening_sensor_sensor
+      entity_id: zwave.fibaro_system_fgk10x_door_opening_sensor
 
 - platform: template
   sensors:
@@ -64,7 +64,7 @@
   sensors:
     batt_back_door:
       friendly_name: 'Back Door Battery'
-      value_template: '{{ states.zwave.aeotec_zw112_door_window_sensor_6_sensor.attributes.battery_level }}'
+      value_template: '{{ states.zwave.aeotec_zw112_door_window_sensor_6.attributes.battery_level }}'
       unit_of_measurement: '%'
-      entity_id: zwave.aeotec_zw112_door_window_sensor_6_sensor
+      entity_id: zwave.aeotec_zw112_door_window_sensor_6
 
