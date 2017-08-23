@@ -1,0 +1,14 @@
+.HA_VERSION
+.ios.conf
+.uuid
+OZW_Log.txt
+deps/
+home-assistant.log
+home-assistant_v2.db
+known_devices.yaml
+phue.conf
+plex.conf
+pyozw.sqlite
+secrets.yaml
+zwcfg_0xcba71de4.xml
+zwscene.xml
