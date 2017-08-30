@@ -28,7 +28,7 @@
       message: "Front Door: {{ states.sensor.front_door.state }}"
       data:
         push:
-          badge: 5
+          badge: 1
 
 
 - alias: Back Door Open
@@ -45,6 +45,22 @@
       message: "Back Door Sensor: {{ states.sensor.back_door.state }}"
       data:
         push:
-          badge: 5
+          badge: 2
+
+- alias: Hallway Motion
+  trigger:
+    platform: state
+    entity_id: sensor.hall_motion
+  condition:
+    - condition: state
+      entity_id: group.presence
+      state: 'not home'
+  action:
+    service: notify.all_phones
+    data:
+      message: "Hallway Movement: {{ states.sensor.hall_motion.state }}"
+      data:
+        push:
+          badge: 3
 
 

@@ -46,6 +46,23 @@
 
 - platform: template
   sensors:
+    hall_motion:
+      value_template: >-
+          {%- if is_state('sensor.aeotec_zw100_multisensor_6_burglar', '3') -%}
+            Tamper
+          {%- elif is_state('sensor.aeotec_zw100_multisensor_6_burglar', '8') -%}
+            Motion
+          {%- elif is_state('sensor.aeotec_zw100_multisensor_6_burglar', '0') -%}
+            OK
+          {%- elif is_state('sensor.aeotec_zw100_multisensor_6_burglar', '254') -%}
+            OK
+          {%- else -%}
+            Unknown
+          {%- endif -%}
+      friendly_name: 'Hall Motion'
+
+- platform: template
+  sensors:
     batt_frontdoor:
       friendly_name: 'Front Door Battery'
       value_template: '{{ states.zwave.fibaro_system_fgk10x_door_opening_sensor.attributes.battery_level }}'
