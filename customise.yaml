@@ -50,3 +50,6 @@
         friendly_name: Ben's Phone
     device_tracker.hera:
         friendly_name: Lizzie's Phone
+
+    sensor.hall_motion:
+        icon: mdi:run
