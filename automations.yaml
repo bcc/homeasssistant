@@ -1,18 +1,14 @@
-#- alias: Front Door Open
-  #trigger:
-    #platform: state
-    #entity_id: binary_sensor.fibaro_system_fgk10x_door_opening_sensor_sensor
-  #condition:
-    #- condition: state
-      #entity_id: group.presence
-      #state: 'not home'
-  #action:
-    #service: notify.all_phones
-    #data:
-      #message: "Front Door Sensor: {{ states.binary_sensor.fibaro_system_fgk10x_door_opening_sensor_sensor.state }}"
-      #data:
-        #push:
-          #badge: 5
+- alias: Flood Sensor
+  trigger:
+    platform: state
+    entity_id: binary_sensor.fibaro_system_fgfs101_flood_sensor_flood
+  action:
+    service: notify.all_phones
+    data:
+      message: "Flood Sensor: {{ states.binary_sensor.fibaro_system_fgfs101_flood_sensor_flood.state }}"
+      data:
+        push:
+          badge: 999
 
 - alias: Front Door Open
   trigger:
