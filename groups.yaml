@@ -14,9 +14,11 @@ Nova:
   - sensor.ram_free
   - sensor.cpu_temperature
 
-Doors:
+Security:
   - sensor.front_door
+  - sensor.front_door2
   - sensor.back_door
+  - sensor.hall_motion
 
 Presence:
   - device_tracker.bcc6

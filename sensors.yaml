@@ -28,7 +28,21 @@
         {% else %}
         n/a
         {% endif %}'
+      friendly_name: 'Front Door (binary)'
+
+- platform: template
+  sensors:
+    front_door2:
+      value_template: >-
+          {%- if is_state('sensor.fibaro_system_fgk10x_door_opening_sensor_access_control', '22') -%}
+            Open
+          {%- elif is_state('sensor.fibaro_system_fgk10x_door_opening_sensor_access_control', '23') -%}
+            Closed
+          {%- else -%}
+            Unknown
+          {%- endif -%}
       friendly_name: 'Front Door'
+
 
 - platform: template
   sensors:
