@@ -8,10 +8,10 @@ Multisensor:
   - binary_sensor.aeotec_zw100_multisensor_6_sensor
 
 Nova:
-  - sensor.cpu_use
+  - sensor.cpu_used
   - sensor.average_load_5m
-  - sensor.disk_use_home
-  - sensor.ram_free
+  - sensor.disk_used_home
+  - sensor.ram_available
   - sensor.cpu_temperature
 
 Security:
