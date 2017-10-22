@@ -15,9 +15,9 @@
     platform: state
     entity_id: sensor.front_door
   condition:
-    - condition: state
-      entity_id: group.presence
-      state: 'not home'
+    condition: state
+    entity_id: group.presence
+    state: 'not_home'
   action:
     service: notify.all_phones
     data:
@@ -32,9 +32,9 @@
     platform: state
     entity_id: sensor.back_door
   condition:
-    - condition: state
-      entity_id: group.presence
-      state: 'not home'
+    condition: state
+    entity_id: group.presence
+    state: 'not_home'
   action:
     service: notify.all_phones
     data:
@@ -48,9 +48,9 @@
     platform: state
     entity_id: sensor.hall_motion
   condition:
-    - condition: state
-      entity_id: group.presence
-      state: 'not home'
+    condition: state
+    entity_id: group.presence
+    state: 'not_home'
   action:
     service: notify.all_phones
     data:
