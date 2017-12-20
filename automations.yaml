@@ -60,3 +60,18 @@
           badge: 3
 
 
+- alias: 'Christmas Lights Off'
+  trigger:
+    platform: time
+    at: '00:30:00'
+  action:
+    service: switch.turn_off
+    entity_id: switch.aeotec_zw096_smart_switch_6_switch
+ 
+- alias: 'Christmas Lights On'
+  trigger:
+    platform: time
+    at: '07:00:00'
+  action:
+    service: switch.turn_on
+    entity_id: switch.aeotec_zw096_smart_switch_6_switch

@@ -53,3 +53,6 @@
 
     sensor.hall_motion:
         icon: mdi:run
+
+    switch.aeotec_zw096_smart_switch_6_switch:
+        friendly_name: Christmas Lights  
