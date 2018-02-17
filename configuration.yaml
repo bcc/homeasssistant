@@ -13,7 +13,7 @@ homeassistant:
   customize: !include customise.yaml
 
 # Show links to resources in log and frontend
-introduction:
+#introduction:
 
 # Enables the frontend
 frontend:
@@ -85,3 +85,7 @@ switch:
     name: Hall Camera Motion Detection
 
 ios:
+
+hue:
+  bridges:
+    - host: !secret hue_ip
