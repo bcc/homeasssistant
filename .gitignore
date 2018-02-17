@@ -12,3 +12,4 @@ pyozw.sqlite
 secrets.yaml
 zwcfg_0xcba71de4.xml
 zwscene.xml
+entity_registry.yaml
