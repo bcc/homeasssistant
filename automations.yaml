@@ -75,3 +75,28 @@
   action:
     service: switch.turn_on
     entity_id: switch.aeotec_zw096_smart_switch_6_switch
+
+- alias: PIR Arm
+  trigger:
+    platform: state
+    entity_id: group.presence
+  condition:
+    condition: state
+    entity_id: group.presence
+    state: 'not_home'
+  action:
+    service: switch.turn_on
+    entity_id: switch.hall_camera_motion_detection
+
+- alias: PIR Disarm
+  trigger:
+    platform: state
+    entity_id: group.presence
+  condition:
+    condition: state
+    entity_id: group.presence
+    state: 'home'
+  action:
+    service: switch.turn_off
+    entity_id: switch.hall_camera_motion_detection
+
