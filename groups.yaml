@@ -61,3 +61,41 @@ Batteries:
   - sensor.batt_back_door
   - sensor.batt_multisensor
 
+zwave:
+  name: Z-Wave
+  entities:
+    - zwave.aeotec_zw090_zstick_gen5_eu
+    - zwave.aeotec_zw096_smart_switch_6
+    - zwave.aeotec_zw100_multisensor_6
+    - zwave.aeotec_zw112_door_window_sensor_6
+    - zwave.fibaro_system_fgfs101_flood_sensor
+    - zwave.fibaro_system_fgk10x_door_opening_sensor
+
+Automation:
+  - automation.back_door_open
+  - automation.christmas_lights_off
+  - automation.christmas_lights_on
+  - automation.flood_sensor
+  - automation.front_door_open
+  - automation.hallway_motion
+  - automation.pir_arm
+  - automation.pir_disarm
+
+default_view:
+  name: Home
+  view: yes
+  entities:
+    - group.kitchen
+    - group.hall
+    - group.living_room
+    - group.nova
+    - group.security
+    - group.presence
+    - group.batteries
+
+detail:
+  name: Detail
+  view: yes
+  entities:
+    - group.zwave
+    - group.automation
