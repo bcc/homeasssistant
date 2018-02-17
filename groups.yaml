@@ -1,4 +1,23 @@
-Multisensor:
+Kitchen:
+  - light.kitchen
+  - light.kitchen_pair_1
+  - light.kitchen_pair_2
+  - light.kitchen_six_1
+  - light.kitchen_six_2
+  - light.kitchen_six_3
+  - light.kitchen_six_4
+  - light.kitchen_six_5
+  - light.kitchen_six_6
+  - light.kitchen_strip
+  - binary_sensor.fibaro_system_fgfs101_flood_sensor_flood
+  - sensor.fibaro_system_fgfs101_flood_sensor_temperature
+
+Hall:
+  - light.hall
+  - light.hall_2
+  - light.stairs
+  - light.landing
+  - camera.hall
   - sensor.aeotec_zw100_multisensor_6_temperature
   - sensor.aeotec_zw100_multisensor_6_relative_humidity
   - sensor.aeotec_zw100_multisensor_6_luminance
@@ -7,11 +26,22 @@ Multisensor:
   - sensor.aeotec_zw100_multisensor_6_burglar
   - binary_sensor.aeotec_zw100_multisensor_6_sensor
 
+
+Living Room:
+  - light.living_room
+  - light.living_room_sofa
+  - light.living_room_window
+  - switch.aeotec_zw096_smart_switch_6_switch
+  - sensor.aeotec_zw096_smart_switch_6_energy
+  - sensor.aeotec_zw096_smart_switch_6_power
+  - sensor.aeotec_zw096_smart_switch_6_voltage
+
+
 Nova:
-  - sensor.cpu_used
-  - sensor.average_load_5m
-  - sensor.disk_used_home
-  - sensor.ram_available
+  - sensor.processor_use
+  - sensor.load_5m
+  - sensor.disk_use_percent_home
+  - sensor.memory_free
   - sensor.cpu_temperature
 
 Security:
@@ -19,6 +49,7 @@ Security:
   - sensor.front_door2
   - sensor.back_door
   - sensor.hall_motion
+  - switch.hall_camera_motion_detection
 
 Presence:
   - device_tracker.bcc6
@@ -28,4 +59,5 @@ Batteries:
   - sensor.batt_frontdoor
   - sensor.batt_flood
   - sensor.batt_back_door
+  - sensor.batt_multisensor
 
