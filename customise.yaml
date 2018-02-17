@@ -46,6 +46,15 @@
     sensor.athena_battery_level:
         hidden: true
 
+    light.hall:
+        friendly_name: All Hall Lights
+    light.living_room:
+        friendly_name: All Living Room Lights
+    light.kitchen:
+        friendly_name: All Kitchen Lights
+    light.hue_color_lamp_1:
+        hidden: true
+
     device_tracker.bcc6:
         friendly_name: Ben's Phone
     device_tracker.hera:
@@ -56,3 +65,14 @@
 
     switch.aeotec_zw096_smart_switch_6_switch:
         friendly_name: Christmas Lights  
+    sensor.aeotec_zw096_smart_switch_6_energy:
+        friendly_name: Christmas Lights Usage
+    sensor.aeotec_zw096_smart_switch_6_power:
+        friendly_name: Christmas Lights Power
+    sensor.aeotec_zw096_smart_switch_6_voltage:
+        friendly_name: Mains Voltage
+
+    binary_sensor.fibaro_system_fgfs101_flood_sensor_flood:
+        friendly_name: Flood Sensor
+    sensor.fibaro_system_fgfs101_flood_sensor_temperature:
+        friendly_name: Flood Sensor Temp
