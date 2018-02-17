@@ -6,7 +6,7 @@ deps/
 home-assistant.log
 home-assistant_v2.db
 known_devices.yaml
-phue.conf
+phue*
 plex.conf
 pyozw.sqlite
 secrets.yaml
