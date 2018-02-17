@@ -72,7 +72,16 @@ zwave:
 
 camera:
   - platform: generic
-    still_image_url: !secret hall_camera_img
+    still_image_url: !secret blueiris_hall
     name: Hall
+    username: !secret blueiris_user
+    password: !secret blueiris_pass
+
+switch:
+  - platform: hikvisioncam
+    host: !secret hall_camera_ip
+    username: !secret hall_camera_user
+    password: !secret hall_camera_pass
+    name: Hall Camera Motion Detection
 
 ios:
