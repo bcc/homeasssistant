@@ -85,13 +85,14 @@ default_view:
   name: Home
   view: yes
   entities:
-    - group.kitchen
+    - group.security
     - group.hall
+    - group.kitchen
     - group.living_room
     - group.nova
-    - group.security
     - group.presence
     - group.batteries
+    - camera.pizero
 
 detail:
   name: Detail
