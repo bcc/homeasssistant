@@ -54,6 +54,8 @@
         friendly_name: All Kitchen Lights
     light.hue_color_lamp_1:
         hidden: true
+    light.study:
+        friendly_name: Study Lights
 
     device_tracker.bcc6:
         friendly_name: Ben's Phone
