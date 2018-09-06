@@ -11,6 +11,7 @@ Kitchen:
   - light.kitchen_strip
   - binary_sensor.fibaro_system_fgfs101_flood_sensor_flood
   - sensor.fibaro_system_fgfs101_flood_sensor_temperature
+  - camera.pizero2
 
 Hall:
   - light.hall

@@ -81,6 +81,12 @@ camera:
     name: PiZero
     username: !secret blueiris_user
     password: !secret blueiris_pass
+  - platform: generic
+    still_image_url: !secret blueiris_pizero2
+    name: PiZero2
+    username: !secret blueiris_user
+    password: !secret blueiris_pass
+
 
 switch:
   - platform: hikvisioncam
