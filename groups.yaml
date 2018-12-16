@@ -32,10 +32,10 @@ Living Room:
   - light.living_room
   - light.living_room_sofa
   - light.living_room_window
-  - switch.aeotec_zw096_smart_switch_6_switch
-  - sensor.aeotec_zw096_smart_switch_6_energy
-  - sensor.aeotec_zw096_smart_switch_6_power
-  - sensor.aeotec_zw096_smart_switch_6_voltage
+  - switch.aeotec_zw096_smart_switch_6_switch_2
+  - sensor.aeotec_zw096_smart_switch_6_energy_2
+  - sensor.aeotec_zw096_smart_switch_6_power_2
+  - sensor.aeotec_zw096_smart_switch_6_voltage_2
 
 
 Nova:
@@ -54,7 +54,7 @@ Security:
 
 Presence:
   - device_tracker.bcc6
-  - device_tracker.hera
+  - device_tracker.europa
 
 Batteries:
   - sensor.batt_frontdoor

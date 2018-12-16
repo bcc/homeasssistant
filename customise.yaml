@@ -33,9 +33,9 @@
     #binary_sensor.aeotec_zw112_door_window_sensor_6_sensor:
     #    friendly_name: Back Door
 
-    sensor.hera_battery_state:
+    sensor.europa_battery_state:
         hidden: true
-    sensor.hera_battery_level:
+    sensor.europa_battery_level:
         hidden: true
     sensor.bcc6_battery_state:
         hidden: true
@@ -59,19 +59,19 @@
 
     device_tracker.bcc6:
         friendly_name: Ben's Phone
-    device_tracker.hera:
+    device_tracker.europa:
         friendly_name: Lizzie's Phone
 
     sensor.hall_motion:
         icon: mdi:run
 
-    switch.aeotec_zw096_smart_switch_6_switch:
+    switch.aeotec_zw096_smart_switch_6_switch_2:
         friendly_name: Christmas Lights  
-    sensor.aeotec_zw096_smart_switch_6_energy:
+    sensor.aeotec_zw096_smart_switch_6_energy_2:
         friendly_name: Christmas Lights Usage
-    sensor.aeotec_zw096_smart_switch_6_power:
+    sensor.aeotec_zw096_smart_switch_6_power_2:
         friendly_name: Christmas Lights Power
-    sensor.aeotec_zw096_smart_switch_6_voltage:
+    sensor.aeotec_zw096_smart_switch_6_voltage_2:
         friendly_name: Mains Voltage
 
     binary_sensor.fibaro_system_fgfs101_flood_sensor_flood:
