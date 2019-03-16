@@ -32,6 +32,8 @@ Living Room:
   - light.living_room
   - light.living_room_sofa
   - light.living_room_window
+  - light.hue_play_1
+  - light.hue_play_2
   - switch.aeotec_zw096_smart_switch_6_switch_2
   - sensor.aeotec_zw096_smart_switch_6_energy_2
   - sensor.aeotec_zw096_smart_switch_6_power_2
