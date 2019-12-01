@@ -103,7 +103,8 @@
   sensors:
     batt_multisensor:
       friendly_name: 'Multisensor Battery'
-      value_template: '{{ states.zwave.fibaro_system_fgk10x_door_opening_sensor.attributes.battery_level }}'
+
+      value_template: '{{ states.zwave.aeotec_zw100_multisensor_6.attributes.battery_level }}'
       unit_of_measurement: '%'
-      entity_id: zwave.fibaro_system_fgk10x_door_opening_sensor
+      entity_id: zwave.aeotec_zw100_multisensor_6
 

@@ -1,5 +1,5 @@
 - name: all_phones
   platform: group
   services:
-    - service: ios_bcc6
-    - service: ios_europa
+    - service: mobile_app_bcc
+    - service: mobile_app_europa

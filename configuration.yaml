@@ -22,10 +22,8 @@ frontend:
 config:
 
 http:
-  # Uncomment this to add a password (recommended!)
-  api_password: !secret http_password
   # Uncomment this if you are using SSL or running in Docker etc
-  # base_url: 
+  base_url: !secret base_url
   ssl_certificate: /home/homeassistant/fullchain.pem
   ssl_key: /home/homeassistant/privkey.pem
 
@@ -60,8 +58,8 @@ sensor: !include sensors.yaml
 notify: !include notify.yaml
 
 # Text to speech
-tts:
-  platform: google
+#tts:
+#platform: google
 
 group: !include groups.yaml
 automation: !include automations.yaml
@@ -73,19 +71,25 @@ zwave:
 camera:
   - platform: generic
     still_image_url: !secret blueiris_hall
+    stream_source: !secret blueiris_hall_stream
     name: Hall
     username: !secret blueiris_user
     password: !secret blueiris_pass
+    authentication: basic
   - platform: generic
     still_image_url: !secret blueiris_pizero
+    stream_source: !secret blueiris_pizero_stream
     name: PiZero
     username: !secret blueiris_user
     password: !secret blueiris_pass
-  - platform: generic
-    still_image_url: !secret blueiris_pizero2
-    name: PiZero2
-    username: !secret blueiris_user
-    password: !secret blueiris_pass
+    authentication: basic
+#  - platform: generic
+#    still_image_url: !secret blueiris_pizero2
+#    stream_source: !secret blueiris_pizero2_stream
+#    name: PiZero2
+#    username: !secret blueiris_user
+#    password: !secret blueiris_pass
+#    authentication: basic
 
 
 switch:
@@ -100,3 +104,21 @@ ios:
 hue:
   bridges:
     - host: !secret hue_ip
+
+recorder:
+  db_url: postgresql://@/hass
+
+mobile_app:
+map:
+person:
+  - name: Ben
+    id: bcc
+    device_trackers:
+      - device_tracker.bcc_2
+  - name: Lizzie
+    id: lizzie
+    device_trackers:
+      - device_tracker.europa
+script:
+ssdp:
+system_health:
